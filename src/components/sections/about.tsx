@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -15,35 +16,146 @@ const StyledAboutSection = styled.section`
   }
 `;
 
+const StyledText = styled.div`
+  ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+
+      &:before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+    }
+  }
+`;
+
+const StyledPic = styled.div`
+  position: relative;
+  max-width: 300px;
+
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+    width: 70%;
+  }
+
+  .wrapper {
+    ${({ theme }) => theme.mixins.boxShadow};
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      transform: translate(-4px, -4px);
+
+      &:after {
+        transform: translate(8px, 8px);
+      }
+
+      .img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+
+    .img {
+      position: relative;
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: var(--transition);
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      background-color: var(--navy);
+      mix-blend-mode: screen;
+    }
+
+    &:after {
+      border: 2px solid var(--green);
+      top: 14px;
+      left: 14px;
+      z-index: -1;
+    }
+  }
+`;
+
 const About = () => {
 
 	const langs = ["Javascript", "Typescript", "C", "C++", "Golang"];
 	const techs = ["React", "Redux", "Node.js", "Express.js", "MongoDB", "SQL", "Docker", "AWS"]
-	const extras = ["Git", "Github", "Linux", "Figma", "Pipelines", "Vim", "Distributed Systems", "OS", "Dbms"]
+	const extras = ["Git", "Github", "Linux", "Figma", "Pipelines", "Vim", "Distributed Systems", "Operating Systems", "Dbms"]
 	return (
 		<>
 			<StyledAboutSection id="about">
 				<h2 className="numbered-heading">About Me</h2>
 
 				<div className="inner">
-					<div>
-						Hello! my name is Amanjot Singh and currently I'm pursuing my engineering bachelors in comuter science. I have always wanted to build things and that's how my passion for coding was built.
-						Till now I've build many projects which im proud of cause of the challenges i got to tackle on my own such as making my own programming language to learn more about programming or building key value store to understand redis structure, and many more.
-						Outside this I love getting to work on new opportunities and real world problems and hope to work on many in my career and seek exponential growth.
-					</div>
+					<StyledText>
+						<div>
+							Hello! my name is Amanjot Singh and currently I'm pursuing my engineering bachelors in comuter science. I have always wanted to build things and that's how my passion for coding was built.
+							Till now I've build many projects which im proud of cause of the challenges i got to tackle on my own such as making my own programming language to learn more about programming or building key value store to understand redis structure, and many more.
+							Outside this I love getting to work on new opportunities and real world problems and hope to work on many in my career and seek exponential growth.
+							
+							<p>Here are few technologies I've been working with recently:</p>
+						</div>
 
-					<p>Here are few technologies I've been working with recently:</p>
+						<ul className="skills-list">
+							{langs.map((skill, i) => <li key={i}>{skill}</li>)}
+						</ul>
+						<ul className="skills-list">
+							{techs.map((skill, i) => <li key={i}>{skill}</li>)}
+						</ul>
+						<ul className="skills-list">
+							{extras.map((skill, i) => <li key={i}>{skill}</li>)}
+						</ul>
+					</StyledText>
+
+					<StyledPic>
+						<div className="wrapper">
+							<StaticImage
+								className="img"
+								src="../../images/dp.jpg"
+								width={500}
+								quality={95}
+								formats={['auto', 'webp', 'avif']}
+								alt="Headshot"
+							/>
+						</div>
+					</StyledPic>
 				</div>
-
-				<ul className="skills-list">
-					{langs.map((skill, i) => <li key={i}>{skill}</li>)}
-				</ul>
-				<ul className="skills-list">
-					{techs.map((skill, i) => <li key={i}>{skill}</li>)}
-				</ul>
-				<ul className="skills-list">
-					{extras.map((skill, i) => <li key={i}>{skill}</li>)}
-				</ul>
 			</StyledAboutSection>
 		</>
 	)
