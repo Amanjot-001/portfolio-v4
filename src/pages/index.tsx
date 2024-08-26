@@ -1,9 +1,18 @@
 import * as React from "react"
+import GlobalStyle from "../styles/global";
 import Hero from "../components/sections/hero";
+import { ThemeProvider } from "styled-components";
+import theme from "../styles/theme";
 
-const IndexPage = ()=> {
+const IndexPage = () => {
 	return (
-		<Hero />
+		<>
+			<ThemeProvider theme={theme}>
+				<GlobalStyle />
+				<Hero />
+
+			</ThemeProvider>
+		</>
 	)
 }
 
