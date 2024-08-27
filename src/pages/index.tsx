@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Hero from "../components/sections/hero";
 import About from "../components/sections/about";
 import Jobs from "../components/sections/jobs";
+import Featured from "../components/sections/featured";
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -17,6 +18,7 @@ const IndexPage = () => {
 					<Hero />
 					<About />
 					<Jobs />
+					<Featured />
 				</StyledMainContainer>
 			</Layout>
 		</>
