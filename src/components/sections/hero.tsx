@@ -54,8 +54,17 @@ const Hero = () => {
 			</p>
 		</>
 	);
+	const five = (
+		<a
+			className="email-link"
+			href="/resume.pdf"
+			target="_blank"
+			rel="noopener noreferrer">
+			Check out my resume!
+		</a>
+	);
 
-	const items = [one, two, three, four];
+	const items = [one, two, three, four, five];
 
 	return (
 		<>
