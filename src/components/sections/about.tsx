@@ -114,7 +114,7 @@ const StyledPic = styled.div`
 
 const About = () => {
 
-	const langs = ["Javascript", "Typescript", "C", "C++", "Golang"];
+	const langs = ["Javascript/Typescript", "C/C++", "Golang"];
 	const techs = ["React", "Redux", "Node.js", "Express.js", "MongoDB", "SQL", "Docker", "AWS"]
 	const extras = ["Git", "Github", "Linux", "Figma", "Pipelines", "Vim", "Distributed Systems", "Operating Systems", "Dbms"]
 	return (
@@ -125,20 +125,23 @@ const About = () => {
 				<div className="inner">
 					<StyledText>
 						<div>
-							Hello! my name is Amanjot Singh and currently I'm pursuing my engineering bachelors in comuter science. I have always wanted to build things and that's how my passion for coding was built.
-							Till now I've build many projects which im proud of cause of the challenges i got to tackle on my own such as making my own programming language to learn more about programming or building key value store to understand redis structure, and many more.
-							Outside this I love getting to work on new opportunities and real world problems and hope to work on many in my career and seek exponential growth.
-							
-							<p>Here are few technologies I've been working with recently:</p>
+							<p>
+								Hello! My name is Amanjot Singh, and I'm currently pursuing a bachelor's degree in Computer Science Engineering. I've always wanted to build things, and that's how my passion for coding developed.
+							</p>
+							<p>
+								So far, I've built many projects that I'm proud of because of the challenges I tackled on my own, such as creating my own <a href="https://vyzon.netlify.app/">programming language</a> to deepen my understanding of programming or building a <a href="https://github.com/Amanjot-001/redis-js">key-value store</a> to explore Redis structures, among others.
+							</p>
+							<p>
+								Beyond that, I love working on new opportunities and solving real-world problems, and I hope to continue doing so throughout my career while seeking exponential growth.
+							</p>
+							<p>
+								Here are few technologies I've been working with recently:
+							</p>
 						</div>
 
 						<ul className="skills-list">
 							{langs.map((skill, i) => <li key={i}>{skill}</li>)}
-						</ul>
-						<ul className="skills-list">
 							{techs.map((skill, i) => <li key={i}>{skill}</li>)}
-						</ul>
-						<ul className="skills-list">
 							{extras.map((skill, i) => <li key={i}>{skill}</li>)}
 						</ul>
 					</StyledText>
