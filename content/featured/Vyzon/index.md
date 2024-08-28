@@ -12,7 +12,6 @@ tech:
   - Tokenizer
   - Parser
   - Interpreter
-  - Code-generator
 ---
 
 Vyzon is a versatile and custom-tailored programming language designed to provide coders with the freedom to shape their coding experiences.
