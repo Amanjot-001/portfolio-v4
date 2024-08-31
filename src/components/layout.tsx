@@ -5,6 +5,7 @@ import GlobalStyle from "../styles/global";
 import theme from "../styles/theme";
 import Nav from "./nav";
 import Footer from "./footer";
+import Email from "./email";
 
 const StyledContent = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ const Layout = ({ children }: LayoutProps) => {
 						<Nav />
 						<div id="content">
 							{children}
+							<Email />
 							<Footer />
 						</div>
 					</StyledContent>
