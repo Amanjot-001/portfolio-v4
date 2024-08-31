@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import { useStaticQuery, graphql } from 'gatsby';
-import { IconHome } from '../icons';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
