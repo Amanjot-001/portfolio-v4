@@ -86,11 +86,16 @@ const StyledTabButton = styled.button<{ isActive: boolean }>`
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
     text-align: center;
+	justify-content: start;
   }
 
   &:hover,
   &:focus {
     background-color: var(--light-navy);
+  }
+
+  span {
+    width: max-content;
   }
 `;
 
