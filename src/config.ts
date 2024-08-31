@@ -3,6 +3,11 @@ interface NavLink {
 	url: string;
 }
 
+interface SocialMedia {
+	name: string;
+	url: string;
+}
+
 interface SrConfig {
 	origin: string;
 	distance: string;
@@ -21,6 +26,7 @@ interface SrConfig {
 
 interface Config {
 	email: string;
+	socialMedia: SocialMedia[];
 	navLinks: NavLink[];
 	colors: {
 		green: string;
@@ -32,6 +38,29 @@ interface Config {
 
 const config: Config = {
 	email: 'amanjotsingh2309@gmail.com',
+
+	socialMedia: [
+		{
+			name: 'GitHub',
+			url: 'https://github.com/Amanjot-001'
+		},
+		{
+			name: 'LinkedIn',
+			url: 'https://www.linkedin.com/in/amanjot-singh-2298a6232/'
+		},
+		{
+			name: 'Twitter',
+			url: 'https://x.com/Amanjotsingh001'
+		},
+		{
+			name: 'Leetcode',
+			url: 'https://leetcode.com/u/Amanjot_001/'
+		},
+		{
+			name: 'Codeforces',
+			url: 'https://codeforces.com/profile/Amanjot'
+		},
+	],
 
 	navLinks: [
 		{
