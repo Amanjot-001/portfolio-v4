@@ -1,16 +1,28 @@
 import React from 'react';
 
 const IconHome = () => (
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		role="img"
-		x="0px"
-		y="0px"
-		width="100"
-		height="100"
-		viewBox="0 0 32 32">
-		<title>Home</title>
-		<path d="M 16 2.59375 L 15.28125 3.28125 L 2.28125 16.28125 L 3.71875 17.71875 L 5 16.4375 L 5 28 L 14 28 L 14 18 L 18 18 L 18 28 L 27 28 L 27 16.4375 L 28.28125 17.71875 L 29.71875 16.28125 L 16.71875 3.28125 Z M 16 5.4375 L 25 14.4375 L 25 26 L 20 26 L 20 16 L 12 16 L 12 26 L 7 26 L 7 14.4375 Z"></path>
+	<svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+		<title>Home Logo</title>
+		<g transform="translate(-8.000000, -2.000000)">
+			<g transform="translate(11.000000, 5.000000)">
+				{/* Hexagon container */}
+				<polygon
+					id="Shape"
+					stroke="currentColor"
+					strokeWidth="5"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					points="39 0 0 22 0 67 39 90 78 68 78 23"
+				/>
+				{/* Scaled and translated Home logo inside the hexagon */}
+				<g transform="scale(0.020) translate(350, 450)">
+					<path
+						d="M1600,259.375l-71.875,68.75l-1300,1300l143.75,143.75l128.125,-128.125v1156.25h900v-1000h400v1000h900v-1156.25l128.125,128.125l143.75,-143.75l-1300,-1300zM1600,543.75l900,900v1156.25h-500v-1000h-800v1000h-500v-1156.25z"
+						fill="currentColor"
+					/>
+				</g>
+			</g>
+		</g>
 	</svg>
 );
 

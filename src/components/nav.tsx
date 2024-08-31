@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from 'gatsby';
 import config from '../config';
 import useScrollDirection from "../hooks/useScrollDIrection";
+import { IconHome, IconHex } from './icons';
 
 type HeaderProps = {
 	scrollDirection: 'up' | 'down';
@@ -155,9 +156,24 @@ const Nav = () => {
 	const [scrolledToTop, setScrolledToTop] = useState(true);
 
 	const navLinks = config.navLinks;
+
+	const Logo = (
+		<div className="logo" tabIndex={-1}>
+			<Link to="/" aria-label="home">
+				<div className="hex-container">
+					<IconHex />
+				</div>
+				<div className="logo-container">
+					<IconHome />
+				</div>
+			</Link>
+		</div>
+	);
+
 	return (
 		<StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
 			<StyledNav>
+				{Logo}
 				<StyledLinks>
 					<ol>
 						{navLinks &&
