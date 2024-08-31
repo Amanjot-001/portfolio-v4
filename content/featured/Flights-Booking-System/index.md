@@ -3,7 +3,7 @@ date: '2'
 title: 'Flights'
 desc: 'Booking Service'
 cover: './flights.jpeg'
-github: 'https://github.com/Amanjot-001/Vyzon'
+github: 'https://github.com/Amanjot-001/Flights-service'
 cta: ''
 tech:
   - Microservices
