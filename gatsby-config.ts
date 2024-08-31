@@ -17,12 +17,6 @@ const config: GatsbyConfig = {
 		"gatsby-plugin-sharp",
 		"gatsby-plugin-mdx",
 		{
-			resolve: 'gatsby-plugin-manifest',
-			options: {
-				"icon": ""
-			}
-		},
-		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				"name": "images",
