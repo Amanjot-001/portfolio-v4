@@ -26,10 +26,11 @@ const Layout = ({ children }: LayoutProps) => {
 					<GlobalStyle />
 					<StyledContent>
 						<Nav />
+						<Social />
+						<Email />
+						
 						<div id="content">
 							{children}
-							<Social />
-							<Email />
 							<Footer />
 						</div>
 					</StyledContent>
