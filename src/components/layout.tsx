@@ -6,6 +6,7 @@ import theme from "../styles/theme";
 import Nav from "./nav";
 import Footer from "./footer";
 import Email from "./email";
+import Social from "./social";
 
 const StyledContent = styled.div`
   display: flex;
@@ -27,6 +28,7 @@ const Layout = ({ children }: LayoutProps) => {
 						<Nav />
 						<div id="content">
 							{children}
+							<Social />
 							<Email />
 							<Footer />
 						</div>
