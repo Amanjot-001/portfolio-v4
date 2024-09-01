@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
@@ -153,6 +153,20 @@ const Menu = () => {
 
 	const buttonRef = useRef(null);
 	const navRef = useRef(null);
+
+	const onResize = (e: any) => {
+		if (e.currentTarget.innerWidth > 768) {
+			setMenuOpen(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('resize', onResize);
+
+		return () => {
+			window.removeEventListener('resize', onResize);
+		};
+	}, []);
 
 	const wrapperRef = useRef<HTMLDivElement | null>(null);
 	useOnClickOutside(wrapperRef, () => setMenuOpen(false));
