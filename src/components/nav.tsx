@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from 'gatsby';
 import config from '../config';
-import useScrollDirection from "../hooks/useScrollDIrection";
+import { useScrollDirection } from "../hooks";
 import { IconHome, IconHex } from './icons';
 import Menu from "./menu";
 

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import config from '../config';
+import { useOnClickOutside } from '../hooks';
 
 const StyledMenu = styled.div`
 	display: none;
