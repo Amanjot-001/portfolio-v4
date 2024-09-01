@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import config from '../config';
 import useScrollDirection from "../hooks/useScrollDIrection";
 import { IconHome, IconHex } from './icons';
+import Menu from "./menu";
 
 type HeaderProps = {
 	scrollDirection: 'up' | 'down';
@@ -186,6 +187,8 @@ const Nav = () => {
 							))}
 					</ol>
 				</StyledLinks>
+
+				<Menu />
 			</StyledNav>
 		</StyledHeader>
 	)
