@@ -144,6 +144,10 @@ const About = () => {
 							{techs.map((skill, i) => <li key={i}>{skill}</li>)}
 							{extras.map((skill, i) => <li key={i}>{skill}</li>)}
 						</ul>
+
+						<p>
+							and much more....
+						</p>
 					</StyledText>
 
 					<StyledPic>
@@ -159,7 +163,7 @@ const About = () => {
 						</div>
 					</StyledPic>
 				</div>
-			</StyledAboutSection>
+			</StyledAboutSection >
 		</>
 	)
 }
