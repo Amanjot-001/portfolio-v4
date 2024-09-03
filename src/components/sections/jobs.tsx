@@ -206,8 +206,13 @@ const Jobs = () => {
 			setTabFocus(tabs.current.length - 1);
 		}
 	};
-	useEffect(() => focusTab(), [tabFocus]);
-
+	useEffect(() => {
+		// Only apply focus if it's not the initial page load
+		if (tabFocus !== 0) {
+			focusTab();
+		}
+	}, [tabFocus]);
+	
 	return (
 		<>
 			<StyledJobsSection id="jobs">
