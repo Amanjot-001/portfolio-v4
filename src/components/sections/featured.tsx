@@ -255,6 +255,10 @@ const StyledProject = styled.li`
       opacity: 0.25;
     }
 
+	&:hover {
+      z-index: 3;
+    }
+
     a {
       width: 100%;
       height: 100%;
