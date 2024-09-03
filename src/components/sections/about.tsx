@@ -157,7 +157,7 @@ const About = () => {
 								src="../../images/dp.jpg"
 								width={500}
 								quality={95}
-								formats={['auto', 'webp', 'avif']}
+								formats={['auto', 'webp', 'avif', 'jpg']}
 								alt="Headshot"
 							/>
 						</div>
