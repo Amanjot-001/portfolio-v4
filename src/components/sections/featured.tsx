@@ -55,9 +55,12 @@ const StyledProject = styled.li`
     }
     .project-tech-list {
       justify-content: flex-end;
+	  margin-left: auto;
+	  margin-right: 0;
 
       @media (max-width: 768px) {
         justify-content: flex-start;
+		margin: 0;
       }
 
       li {
@@ -186,6 +189,7 @@ const StyledProject = styled.li`
     margin: 25px 0 10px;
     padding: 0;
     list-style: none;
+	width: 80%;
 
     li {
       margin: 0 20px 5px 0;
@@ -197,6 +201,7 @@ const StyledProject = styled.li`
 
     @media (max-width: 768px) {
       margin: 10px 0;
+	  width: 100%;
 
       li {
         margin: 0 10px 5px 0;
