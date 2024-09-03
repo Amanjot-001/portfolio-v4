@@ -7,7 +7,8 @@ import {
 	IconTwitter,
 	IconLinkedin,
 	IconLeetcode,
-	IconCodeforces
+	IconCodeforces,
+	IconFolder
 } from './index';
 
 const Icon = ({ name }) => {
@@ -26,6 +27,8 @@ const Icon = ({ name }) => {
 			return <IconLeetcode />;
 		case 'Codeforces':
 			return <IconCodeforces />;
+		case 'Folder':
+			return <IconFolder />;
 		default:
 			return <IconExternal />;
 	}
