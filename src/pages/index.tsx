@@ -5,6 +5,7 @@ import Hero from "../components/sections/hero";
 import About from "../components/sections/about";
 import Jobs from "../components/sections/jobs";
 import Featured from "../components/sections/featured";
+import Others from "../components/sections/others";
 import Contact from "../components/sections/contact";
 
 const StyledMainContainer = styled.main`
@@ -20,6 +21,7 @@ const IndexPage = () => {
 					<About />
 					<Jobs />
 					<Featured />
+					<Others />
 					<Contact />
 				</StyledMainContainer>
 			</Layout>
