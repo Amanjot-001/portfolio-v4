@@ -114,9 +114,9 @@ const StyledPic = styled.div`
 
 const About = () => {
 
-	const langs = ["Javascript/Typescript", "C/C++", "Golang"];
-	const techs = ["React", "Redux", "Node.js", "Express.js", "MongoDB", "SQL", "Docker", "AWS"]
-	const extras = ["Git", "Github", "Linux", "Figma", "Pipelines", "Vim", "Distributed Systems", "Operating Systems", "Dbms"]
+	const langs = ["Javascript/Typescript", "C/C++", "Golang", "Python"];
+	const techs = ["React", "Redux", "Node.js", "Express.js", "MongoDB", "SQL", "Redis", "Docker", "AWS", "Websockets"]
+	const extras = ["Git", "Github", "Linux", "Figma", "Pipelines", "Vim", "Distributed Systems", "Operating Systems", "DBMS", "Data Structures and Algorithms"]
 	return (
 		<>
 			<StyledAboutSection id="about">
