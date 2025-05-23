@@ -126,7 +126,7 @@ const About = () => {
 					<StyledText>
 						<div>
 							<p>
-								Hello! My name is Amanjot Singh, and I'm currently pursuing a bachelor's degree in Computer Science Engineering. I've always wanted to build things, and that's how my passion for coding developed.
+								Hello! My name is Amanjot Singh, and I'm a 2025 graduate with a bachelor's degree in Computer Science Engineering. I've always wanted to build things, and that's how my passion for coding developed.
 							</p>
 							<p>
 								So far, I've built many projects that I'm proud of because of the challenges I tackled on my own, such as creating my own <a href="https://vyzon.netlify.app/">programming language</a> to deepen my understanding of programming or building a <a href="https://github.com/Amanjot-001/redis-js">key-value store</a> to explore Redis structures, among others.
