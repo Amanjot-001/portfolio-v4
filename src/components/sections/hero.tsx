@@ -50,7 +50,7 @@ const Hero = () => {
 	const four = (
 		<>
 			<p>
-				I'm a final-year Computer Science engineering student with a passion for programming and software development.
+				I'm a Computer Science graduate with a passion for programming and software development.
 			</p>
 		</>
 	);
