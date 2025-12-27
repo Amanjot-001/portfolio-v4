@@ -1,5 +1,5 @@
 ---
-date: '5'
+date: '6'
 title: 'Semicolon'
 desc: 'Touch-Typing Platform'
 cover: './semicolon.jpg'

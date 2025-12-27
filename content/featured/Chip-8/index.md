@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '3'
 title: 'Chip-8'
 desc: 'Emulator'
 cover: './chip8.png'
