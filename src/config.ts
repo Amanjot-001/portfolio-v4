@@ -60,6 +60,10 @@ const config: Config = {
 			name: 'Codeforces',
 			url: 'https://codeforces.com/profile/Amanjot'
 		},
+		{
+			name: 'Youtube',
+			url: 'https://www.youtube.com/@AmanjotSingh_001'
+		}
 	],
 
 	navLinks: [

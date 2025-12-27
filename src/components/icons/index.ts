@@ -8,3 +8,4 @@ export { default as IconLinkedin } from './linkedin';
 export { default as IconLeetcode } from './leetcode';
 export { default as IconCodeforces } from './codeforces';
 export { default as IconFolder } from './folder';
+export { default as IconYouTube } from './youtube'

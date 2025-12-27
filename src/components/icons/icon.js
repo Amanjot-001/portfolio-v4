@@ -8,7 +8,8 @@ import {
 	IconLinkedin,
 	IconLeetcode,
 	IconCodeforces,
-	IconFolder
+	IconFolder,
+	IconYouTube
 } from './index';
 
 const Icon = ({ name }) => {
@@ -29,6 +30,8 @@ const Icon = ({ name }) => {
 			return <IconCodeforces />;
 		case 'Folder':
 			return <IconFolder />;
+		case 'Youtube':
+			return <IconYouTube />;
 		default:
 			return <IconExternal />;
 	}
