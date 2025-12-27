@@ -129,7 +129,7 @@ const About = () => {
 								Hello! My name is Amanjot Singh, and I'm a 2025 graduate with a bachelor's degree in Computer Science Engineering. I've always wanted to build things, and that's how my passion for coding developed.
 							</p>
 							<p>
-								So far, I've built many projects that I'm proud of because of the challenges I tackled on my own, such as creating my own <a href="https://vyzon.netlify.app/">programming language</a> to deepen my understanding of programming or building a <a href="https://github.com/Amanjot-001/redis-js">key-value store</a> to explore Redis structures, among others.
+								So far, I've built many projects that I'm proud of because of the challenges I tackled on my own, such as creating my own <a href="https://vyzon.netlify.app/">programming language</a> to deepen my understanding of programming or building a <a href="https://github.com/Amanjot-001/Crypto-Matching-Engine">crypto-currency matching engine</a> to explore real-time trading algorithms, among others.
 							</p>
 							<p>
 								Beyond that, I love working on new opportunities and solving real-world problems, and I hope to continue doing so throughout my career while seeking exponential growth.
